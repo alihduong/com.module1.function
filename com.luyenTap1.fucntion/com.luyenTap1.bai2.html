@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Enter Numbers : </label>
+<input type="text" id="input" oninput="converter(this.value)" onchange="converter(this.value)">
+<h2 ><p id="display"></p></h2>
+</body>
+<script>
+    function converter(num){
+        num = parseInt(num);
+        document.getElementById('display').innerHTML = num + 1;
+    }
+</script>
+</html>

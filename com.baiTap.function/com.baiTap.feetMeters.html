@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change Feed and </title>
+</head>
+<body>
+<label>Change Meter to Feet</label>
+<input type="text" id="input" oninput="converter(this.value)" onchange="converter(this.value)">
+<p id="display">Feet:</p>
+<label>Change Feet to Meter</label>
+<input type="text" id="input2" oninput="converter2(this.value)" onchange="converter2(this.value)">
+ <p id="display2">Meter:</p>
+<script>
+    function converter(meters) {
+        let feet;
+        meters = parseFloat(meters);
+        feet = meters*3.279;
+        document.getElementById("display").innerHTML = feet;
+    }
+    function converter2(feet) {
+        let meter;
+        feet = parseFloat(feet);
+        meter = feet * 0.305;
+        document.getElementById("display2").innerHTML = meter;
+    }
+</script>
+
+</body>
+</html>
